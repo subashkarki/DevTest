@@ -1,0 +1,341 @@
+/* CSS variables */
+
+@import url(partials/_variables.css);
+
+/* ------------------------------------
+# Navigation Section
+------------------------------------- */
+body {
+  font-family: var(--quicksand);
+  line-height: 1.45;
+}
+
+.header_area .main-menu .navbar {
+  padding: 1rem 10rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  color: var(--title-color);
+}
+.header_area .main-menu .navbar-nav .active a {
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header_area .main-menu .navbar-nav a:hover {
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+header.sticky {
+  position: fixed;
+  width: 100%;
+  background: var(--primary-color);
+  z-index: 100000;
+}
+header.sticky .nav-link {
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header_area.sticky .main-menu .navbar-nav .active a {
+  background: var(--title-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header_area.sticky .main-menu .navbar-nav a:hover {
+  background: var(--title-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ------------------------------------
+# Banner Section
+------------------------------------- */
+
+.site-main .site-banner {
+  background: var(--gradient-color), url("../assets/main-banner.png") no-repeat;
+}
+
+.site-main .site-banner .site-title h1 {
+  padding-top: 30%;
+  font-weight: 700;
+  font-size: 45px;
+}
+.site-main .site-banner .site-title h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.banner-text {
+  color: var(--banner-color);
+  line-height: 1.45;
+}
+.button {
+  margin: 5% 0 30% 0;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--banner-color);
+  padding: 0.8rem 2.2rem;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  color: var(--text-color);
+  background-color: var(--banner-color);
+}
+
+.wave-container {
+  margin-top: -40px;
+}
+
+/* ------------------------------------
+# Service Section
+------------------------------------- */
+
+.title-text {
+  font-weight: 700;
+  font-size: 2.81rem;
+  color: var(--title-color);
+}
+.para {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding: 0rem 14rem;
+  line-height: 1.45;
+}
+
+.card {
+  border-radius: 2%;
+}
+.services-list .card-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--title-color);
+}
+.services-list .card-text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.services-list .card-btn {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+.services-list .card-btn:hover {
+  text-decoration: none;
+}
+
+/* ------------------------------------
+# About Us Section
+------------------------------------- */
+
+.site-main .about-image {
+  width: 85%;
+}
+.site-main .about-image img {
+  width: 100%;
+  height: auto;
+}
+.site-main .about-area {
+  padding: 5rem;
+}
+.site-main .about-area .about-para {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.site-main .about-area ul {
+  list-style-type: none;
+  padding: 0;
+}
+.site-main .about-area ul li {
+  color: var(--text-color);
+  margin-top: 0.3rem;
+}
+.site-main .about-area ul li i {
+  color: var(--primary-color);
+}
+
+/* ------------------------------------
+# Contact Us Section
+------------------------------------- */
+
+.wrapper {
+  width: 100%;
+  -webkit-box-shadow: 0px 21px 41px -13px rgb(0 0 0 / 18%);
+  -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 21px 41px -13px rgb(0 0 0 / 18%);
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.contact-wrap {
+  background: #fff;
+}
+.contactForm .label {
+  color: var(--title-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contactForm .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+.btn.btn-primary {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--banner-color);
+}
+
+.info-wrap {
+  color: rgba(255, 255, 255, 0.8);
+}
+.bg-primary {
+  background: var(--text-color) !important;
+}
+.info-wrap .dbox {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+}
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.info-wrap .dbox .icon span {
+  font-size: 20px;
+  color: var(--banner-color);
+}
+.info-wrap .dbox .text {
+  width: calc(100% - 50px);
+}
+.info-wrap .dbox p span {
+  font-weight: 700;
+  color: var(--banner-color);
+}
+.info-wrap .dbox p a {
+  color: #fff;
+}
+.info-wrap .dbox p a:hover {
+  text-decoration: none;
+}
+
+/* ------------------------------------
+# Footer Section
+------------------------------------- */
+
+footer.footer-area {
+  padding-top: 5rem;
+}
+.footer_content {
+  background: var(--primary-color);
+  color: var(--banner-color);
+}
+.footer_content a {
+  color: var(--banner-color);
+  text-decoration: none;
+}
+
+/* ------------------------------------
+# SVG Animation Section
+------------------------------------- */
+
+.hero-waves {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.wave1 use {
+  -webkit-animation: move-forever1 10s linear infinite;
+  animation: move-forever1 10s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  -webkit-animation: move-forever2 8s linear infinite;
+  animation: move-forever2 8s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  -webkit-animation: move-forever3 6s linear infinite;
+  animation: move-forever3 6s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
